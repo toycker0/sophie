@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import InteractiveRainbowWave from "./InteractiveRainbowWave";
 import { RainbowBorder } from "@/components/ui/RainbowBorder";
 import { RainbowGradient } from "@/components/ui/RainbowGradient";
+import LanguagesMarqueeSection from "@/components/landing/LanguagesMarqueeSection";
 
 const EraSection = () => {
   return (
@@ -32,11 +33,7 @@ const EraSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-2xl md:text-4xl font-semibold text-black"
         >
-          The{" "}
-          <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#E81416,#FFA500,#FAEB36,#79C314,#487DE7,#4B369D,#70369D)]">
-            New Era
-          </span>{" "}
-          of Language Adquisition
+          Your language personal assistant.
         </motion.h2>
 
         {/* Part 2: Wave - Full Width */}
@@ -49,6 +46,17 @@ const EraSection = () => {
         >
           <InteractiveRainbowWave className="h-full" useRainbow={true} />
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="w-full"
+        >
+          <LanguagesMarqueeSection />
+        </motion.div>
+
 
         {/* Additional Text Before Button */}
         <motion.div
