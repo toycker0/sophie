@@ -11,6 +11,8 @@ export const metadata = {
 };
 
 export default function SupportPage() {
+  const whatsappUrl = "https://wa.me/971505814567";
+
   return (
     <main className="min-h-screen bg-white relative">
       <Navbar />
@@ -47,7 +49,7 @@ export default function SupportPage() {
                 <p className="text-sm font-bold text-black">support@speakwithsophie.ai</p>
               </a>
 
-              <a href="mailto:support@speakwithsophie.ai?subject=Account%20Issue" className="group block bg-white/50 border border-gray-100 p-6 rounded-2xl hover:border-gray-200 hover:shadow-lg transition-all duration-300">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="group block bg-white/50 border border-gray-100 p-6 rounded-2xl hover:border-gray-200 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center group-hover:bg-purple-100 transition-colors">
                     <MessageCircle className="w-5 h-5 text-purple-600" />
@@ -55,7 +57,7 @@ export default function SupportPage() {
                   <h3 className="font-bold text-gray-900">Account Help</h3>
                 </div>
                 <p className="text-sm text-gray-500 mb-2">Issues with login, subscription, or account settings.</p>
-                <p className="text-sm font-bold text-black">support@speakwithsophie.ai</p>
+                <p className="text-sm font-bold text-black">+971 50 581 4567</p>
               </a>
             </div>
 

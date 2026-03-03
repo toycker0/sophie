@@ -97,7 +97,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-white relative overflow-hidden">
+    <section id="faq" className="py-16 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-20"

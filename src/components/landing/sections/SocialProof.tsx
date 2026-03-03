@@ -5,26 +5,26 @@ import { useDemo } from "@/context/DemoContext";
 import { demoLanguages } from "@/lib/demo-languages";
 
 const languages = [
-  { name: "Español", font: "font-sans" },
-  { name: "Deutsch", font: "font-serif" },
-  { name: "English", font: "font-sans" },
-  { name: "中文", font: "font-sans" },
-  { name: "日本語", font: "font-sans" },
-  { name: "हिन्दी", font: "font-sans" },
-  { name: "粵語", font: "font-sans" },
-  { name: "Français", font: "font-serif" },
-  { name: "Italiano", font: "font-serif" },
-  { name: "Português", font: "font-sans" },
-  { name: "العربية", font: "font-sans" },
-  { name: "Русский", font: "font-sans" },
-  { name: "한국어", font: "font-sans" },
-  { name: "اردو", font: "font-sans" },
-  { name: "தமிழ்", font: "font-sans" },
-  { name: "বাংলা", font: "font-sans" },
-  { name: "Svenska", font: "font-serif" },
-  { name: "Tiếng Việt", font: "font-sans" },
-  { name: "Kiswahili", font: "font-sans" },
-  { name: "Bahasa Indonesia", font: "font-sans" },
+  { name: "Español" },
+  { name: "Deutsch" },
+  { name: "English" },
+  { name: "中文" },
+  { name: "日本語" },
+  { name: "हिन्दी" },
+  { name: "粵語" },
+  { name: "Français" },
+  { name: "Italiano" },
+  { name: "Português" },
+  { name: "العربية" },
+  { name: "Русский" },
+  { name: "한국어" },
+  { name: "اردو" },
+  { name: "தமிழ்" },
+  { name: "বাংলা" },
+  { name: "Svenska" },
+  { name: "Tiếng Việt" },
+  { name: "Kiswahili" },
+  { name: "Bahasa Indonesia" },
 ];
 
 const SocialProof = () => {
@@ -94,3 +94,4 @@ const SocialProof = () => {
 };
 
 export default SocialProof;
+
