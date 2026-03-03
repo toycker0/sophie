@@ -68,8 +68,10 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		fontFamily: {
-  			sans: ['var(--font-google-sans)'],
-  			googleSans: ['var(--font-google-sans)'],
+  			sans: ['var(--font-google-sans)', 'ui-sans-serif', 'system-ui'],
+  			serif: ['var(--font-google-sans)', 'ui-serif', 'serif'],
+  			mono: ['var(--font-google-sans)', 'ui-monospace', 'monospace'],
+  			googleSans: ['var(--font-google-sans)', 'ui-sans-serif', 'system-ui'],
   		},
   		keyframes: {
   			'accordion-down': {

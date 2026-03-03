@@ -37,7 +37,7 @@ const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="py-24 bg-white relative overflow-hidden">
+    <section id="pricing" className="py-16 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-20">
@@ -64,7 +64,7 @@ const Pricing = () => {
 
         {/* Pricing Cards */}
         <div
-          className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch"
         >
           {/* Free Tier */}
           <div
@@ -121,7 +121,7 @@ const Pricing = () => {
 
           {/* Premium Tier - Highlighted */}
           <div
-            className="relative rounded-3xl shadow-2xl transform md:-translate-y-4 group p-[2px] h-full"
+            className="relative rounded-3xl shadow-2xl transform lg:-translate-y-4 md:translate-y-1/2 group p-[2px] h-full"
             style={{
               backgroundImage: `linear-gradient(to right, ${currentLanguage.from}, ${currentLanguage.via}, ${currentLanguage.to})`,
             }}

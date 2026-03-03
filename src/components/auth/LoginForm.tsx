@@ -126,7 +126,7 @@ const LoginForm = () => {
           variant="outline"
           className="h-12 rounded-xl border-gray-200 font-bold hover:bg-gray-50 hover:border-gray-300 transition-all"
         >
-          <span className="mr-2 font-serif font-black">G</span> Google
+          <span className="mr-2 font-sans font-black">G</span> Google
         </Button>
       </div>
 

@@ -4,6 +4,11 @@ import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import { Shield, Lock, Eye, Server, UserCheck, Trash2 } from "lucide-react";
 
+export const metadata = {
+  title: "Privacy Policy | Speak With Sophie",
+  description: "Privacy Policy for Speak With Sophie — the AI language coach app. Learn how we collect, use, and protect your data.",
+};
+
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-white relative">

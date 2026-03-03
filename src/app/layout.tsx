@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -7,16 +6,6 @@ import { BackToTop } from "@/components/ui/back-to-top";
 import { CookieBanner } from "@/components/ui/cookie-banner";
 import Script from "next/script";
 import { GoogleAnalytics } from '@next/third-parties/google';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const googleSans = localFont({
   src: [
@@ -94,9 +83,9 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${googleSans.variable} scroll-smooth`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${googleSans.variable} antialiased`}
+        className="font-sans antialiased"
       >
         <DemoProvider>
           <ScrollProgress />

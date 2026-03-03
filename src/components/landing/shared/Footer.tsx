@@ -10,6 +10,8 @@ import { RainbowGradient } from "@/components/ui/RainbowGradient";
 import Logo from "@/components/landing/shared/Logo";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-white pt-24 pb-12 border-t border-gray-100 relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
@@ -152,8 +154,8 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-200 pt-10 flex flex-col md:flex-row justify-between items-center">
-          <p className="font-medium text-gray-500">
-            &copy; 2026 Olguin Technologies FZCO. All rights reserved.
+          <p className="text-base font-semibold text-gray-600 leading-relaxed text-center md:text-left">
+            {"\u00A9"} {currentYear} Olguin Technologies FZCO. All rights reserved.
           </p>
 
           {/* <div className="flex items-center space-x-8 mt-6 md:mt-0 font-bold text-gray-500">

@@ -107,7 +107,7 @@ const HowItWorks = () => {
                   <motion.li
                     key={index}
                     variants={itemVariants}
-                    className={`group relative pl-12 lg:w-[88%] lg:pl-0 ${index === 1 ? "lg:ml-auto" : "lg:mr-auto"}`}
+                    className={`group relative lg:w-[88%] ${index === 1 ? "lg:ml-auto" : "lg:mr-auto"}`}
                   >
                     <div className="rounded-2xl bg-gradient-to-br from-sky-200/60 via-slate-100 to-amber-100 p-[1px] lg:mx-8">
                       <div className="relative overflow-hidden rounded-2xl bg-white px-6 py-6 shadow-[0_24px_65px_-45px_rgba(15,23,42,0.6)] transition-all duration-300 group-hover:shadow-[0_28px_72px_-45px_rgba(15,23,42,0.7)] md:px-7 md:py-7">
@@ -129,7 +129,7 @@ const HowItWorks = () => {
                 ))}
               </ol>
 
-              <motion.button className="pl-14 pt-6 group inline-block transition-transform active:scale-95" variants={itemVariants}>
+              <motion.button className="lg:pl-14 pt-6 group inline-block transition-transform active:scale-95" variants={itemVariants}>
                 <RainbowBorder
                   borderRadius={9999}
                   borderWidth={2}
