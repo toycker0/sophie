@@ -1,19 +1,45 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Menu, MessageCircle, X } from "lucide-react";
 import Logo from "@/components/landing/shared/Logo";
+import { useDemo } from "@/context/DemoContext";
+
+const headerLanguageOptions = [
+  { id: "en", label: "English" },
+  { id: "zh", label: "Mandarin Chinese" },
+  { id: "hi", label: "Hindi" },
+  { id: "es", label: "Spanish" },
+  { id: "ar", label: "Modern Standard Arabic" },
+] as const;
 
 const Navbar = () => {
   const whatsappUrl = "https://wa.me/971505814567";
+  const { currentLanguage, setLanguageById } = useDemo();
+  const initialHeaderLanguageId = useMemo(() => {
+    const hasCurrentLanguage = headerLanguageOptions.some(
+      (item) => item.id === currentLanguage.id
+    );
+    return hasCurrentLanguage ? currentLanguage.id : "en";
+  }, [currentLanguage.id]);
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedHeaderLanguageId, setSelectedHeaderLanguageId] =
+    useState(initialHeaderLanguageId);
+
+  const handleLanguageChange = (value: string) => {
+    const option = headerLanguageOptions.find((item) => item.id === value);
+    if (!option) return;
+    setSelectedHeaderLanguageId(option.id);
+    setLanguageById(option.id);
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 20);
@@ -39,16 +65,18 @@ const Navbar = () => {
     >
       <div
         className={cn(
-          "w-[95%] max-w-7xl flex items-center justify-between transition-all duration-300 rounded-full px-4 mx-auto",
+          "w-[95%] max-w-7xl flex items-center justify-between gap-3 transition-all duration-300 rounded-full px-4 mx-auto",
           isScrolled
             ? "bg-white/80 backdrop-blur-2xl border border-white/40 shadow-sm py-3 ring-1 ring-black/5"
             : "bg-transparent py-4 border border-transparent"
         )}
       >
-        <Logo />
+        <div className="shrink-0">
+          <Logo />
+        </div>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1 bg-white/50 p-1.5 rounded-full border border-white/20 backdrop-blur-sm">
+        <div className="hidden xl:flex items-center gap-1 bg-white/50 p-1.5 rounded-full border border-white/20 backdrop-blur-sm">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -59,8 +87,37 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+        <div className="hidden lg:flex xl:hidden items-center gap-0.5 bg-white/50 p-1 rounded-full border border-white/20 backdrop-blur-sm">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-black hover:bg-white/80 rounded-full transition-all duration-200 whitespace-nowrap"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden xl:flex items-center gap-3">
+          <Select
+            value={selectedHeaderLanguageId}
+            onValueChange={handleLanguageChange}
+          >
+            <SelectTrigger
+              aria-label="Select language"
+              className="h-10 w-[220px] rounded-full border-gray-200 bg-white/80 text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm"
+            >
+              <SelectValue placeholder="Language" />
+            </SelectTrigger>
+            <SelectContent>
+              {headerLanguageOptions.map((option) => (
+                <SelectItem key={option.id} value={option.id}>
+                  {option.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
           <Link href="/login" className="font-semibold text-black transition-colors">
             Log in
           </Link>
@@ -70,9 +127,41 @@ const Navbar = () => {
             </Button>
           </a>
         </div>
+        <div className="hidden lg:flex xl:hidden items-center gap-2">
+          <Select
+            value={selectedHeaderLanguageId}
+            onValueChange={handleLanguageChange}
+          >
+            <SelectTrigger
+              aria-label="Select language"
+              className="h-9 w-[170px] rounded-full border-gray-200 bg-white/80 text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm text-sm"
+            >
+              <SelectValue placeholder="Language" />
+            </SelectTrigger>
+            <SelectContent>
+              {headerLanguageOptions.map((option) => (
+                <SelectItem key={option.id} value={option.id}>
+                  {option.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <Link href="/login" className="text-sm font-semibold text-black transition-colors whitespace-nowrap">
+            Log in
+          </Link>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+            <Button
+              size="icon"
+              aria-label="WhatsApp"
+              className="h-9 w-9 rounded-full bg-black hover:bg-gray-900 text-white border border-transparent"
+            >
+              <MessageCircle className="w-4 h-4" />
+            </Button>
+          </a>
+        </div>
 
         {/* Mobile Nav Toggle */}
-        <div className="lg:hidden">
+        <div className="lg:hidden shrink-0">
           <Sheet open={isOpen} onOpenChange={setIsOpen} >
             <SheetTrigger asChild>
               <Button
@@ -124,6 +213,26 @@ const Navbar = () => {
                         {link.label}
                       </Link>
                     ))}
+                    <div>
+                      <Select
+                        value={selectedHeaderLanguageId}
+                        onValueChange={handleLanguageChange}
+                      >
+                        <SelectTrigger
+                          aria-label="Select language"
+                          className="h-12 w-full rounded-full border-gray-200 bg-white text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm"
+                        >
+                          <SelectValue placeholder="Language" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {headerLanguageOptions.map((option) => (
+                            <SelectItem key={option.id} value={option.id}>
+                              {option.label}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
                 </div>
               </div>
