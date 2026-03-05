@@ -1,9 +1,18 @@
 import React from "react";
+import type { Metadata } from "next";
 import { AlertCircle, CheckCircle, FileText } from "lucide-react";
 import Navbar from "@/components/landing/shared/Navbar";
 import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import { getRequestMessages } from "@/lib/i18n/server";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const pageCopy = (await getRequestMessages()).termsPage;
+  return {
+    title: `${pageCopy.title} | Speak With Sophie`,
+    description: pageCopy.acceptanceBody
+  };
+};
 
 export default async function TermsPage() {
   const pageCopy = (await getRequestMessages()).termsPage;

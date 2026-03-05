@@ -27,7 +27,7 @@ const LanguagesMarqueeSection = () => {
   };
 
   return (
-    <section ref={sectionRef} className="pb-12 pt-10 bg-white" aria-label="Supported languages">
+    <section ref={sectionRef} className="pb-12 pt-10 bg-white" aria-label={messages.era.languageTitle}>
       <div className="container mx-auto max-w-7xl">
         <div className="space-y-10">
 

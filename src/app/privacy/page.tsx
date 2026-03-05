@@ -1,14 +1,17 @@
 import React from "react";
+import type { Metadata } from "next";
 import { Eye, Lock, Server, Shield, Trash2, UserCheck } from "lucide-react";
 import Navbar from "@/components/landing/shared/Navbar";
 import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import { getRequestMessages } from "@/lib/i18n/server";
 
-export const metadata = {
-  title: "Privacy Policy | Speak With Sophie",
-  description:
-    "Privacy Policy for Speak With Sophie — the AI language coach app. Learn how we collect, use, and protect your data."
+export const generateMetadata = async (): Promise<Metadata> => {
+  const pageCopy = (await getRequestMessages()).privacyPage;
+  return {
+    title: `${pageCopy.title} | Speak With Sophie`,
+    description: pageCopy.useDataIntro
+  };
 };
 
 export default async function PrivacyPage() {
@@ -58,9 +61,9 @@ export default async function PrivacyPage() {
             <div className="bg-blue-50/50 border border-blue-100 p-6 rounded-2xl text-blue-900">
               <p className="leading-relaxed">
                 <strong>{pageCopy.voiceDataLabel}</strong> {pageCopy.voiceDataBeforeFirstNot}
-                <u>not</u>
+                <u>{pageCopy.voiceDataNotWord}</u>
                 {pageCopy.voiceDataAfterFirstNot}
-                <u>not</u>
+                <u>{pageCopy.voiceDataNotWord}</u>
                 {pageCopy.voiceDataAfterSecondNot}
               </p>
             </div>

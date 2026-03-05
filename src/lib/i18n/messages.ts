@@ -133,6 +133,7 @@ export interface Messages {
     useDataTitle: string;
     useDataIntro: string;
     voiceDataLabel: string;
+    voiceDataNotWord: string;
     voiceDataBeforeFirstNot: string;
     voiceDataAfterFirstNot: string;
     voiceDataAfterSecondNot: string;
@@ -604,6 +605,7 @@ const en: Messages = {
     "useDataTitle": "2. How We Use Your Data",
     "useDataIntro": "Your data is used to personalize your learning experience, track your progress, and improve our AI's accuracy. We do not sell your personal data to third parties.",
     "voiceDataLabel": "Voice Data:",
+    "voiceDataNotWord": "not",
     "voiceDataBeforeFirstNot": "Your voice data is used exclusively for providing real-time speaking feedback. We do ",
     "voiceDataAfterFirstNot": " sell your voice data. We do ",
     "voiceDataAfterSecondNot": " use your voice recordings to train public AI models. Conversations and inputs are processed to generate AI responses and may be used in an anonymized form to improve the language learning experience.",
@@ -1254,9 +1256,10 @@ const zh: Messages = {
     "useDataTitle": "2. 我们如何使用你的数据",
     "useDataIntro": "您的数据用于个性化您的学习体验、跟踪您的进度并提高我们人工智能的准确性。我们不会将您的个人数据出售给第三方。",
     "voiceDataLabel": "语音数据：",
-    "voiceDataBeforeFirstNot": "您的语音数据专门用于提供实时语音反馈。我们做",
-    "voiceDataAfterFirstNot": "出售您的语音数据。我们做",
-    "voiceDataAfterSecondNot": "使用您的录音来训练公共人工智能模型。对话和输入经过处理以生成人工智能响应，并可以匿名形式使用以改善语言学习体验。",
+    "voiceDataNotWord": "不",
+    "voiceDataBeforeFirstNot": "您的语音数据仅用于提供实时口语反馈。我们",
+    "voiceDataAfterFirstNot": "出售您的语音数据。我们",
+    "voiceDataAfterSecondNot": "将您的语音录音用于训练公共 AI 模型。对话和输入会被处理以生成 AI 回复，并可能以匿名形式用于改进语言学习体验。",
     "dataSecurityTitle": "3. 数据安全",
     "dataSecurityBody": "我们实施行业标准的安全措施来保护您的信息免遭未经授权的访问、更改、披露或破坏。所有传输中的数据均通过 TLS 加密，静态数据使用 AES-256 加密。您的对话记录存储在独立的容器中，只有您自己才能访问。",
     "rightsTitle": "4. 你的权利",
@@ -1862,7 +1865,7 @@ const hi: Messages = {
       },
       {
         "q": "मैं अपना खाता कैसे मिटाऊ़?",
-        "a": "You can request account deletion by emailing support@speakwithsophie.ai. All your data will be permanently removed within 30 days."
+        "a": "आप support@speakwithsophie.ai पर ईमेल करके खाता हटाने का अनुरोध कर सकते हैं। आपका सारा डेटा 30 दिनों के भीतर स्थायी रूप से हटा दिया जाएगा।"
       },
       {
         "q": "क्या मैं सोफी का ऑफ़लाइन उपयोग कर सकता हूँ?",
@@ -1904,9 +1907,10 @@ const hi: Messages = {
     "useDataTitle": "2. हम आपके डेटा का उपयोग कैसे करते हैं",
     "useDataIntro": "आपके डेटा का उपयोग आपके सीखने के अनुभव को निजीकृत करने, आपकी प्रगति को ट्रैक करने और हमारी एआई की सटीकता में सुधार करने के लिए किया जाता है। हम आपका व्यक्तिगत डेटा तीसरे पक्ष को नहीं बेचते हैं।",
     "voiceDataLabel": "ध्वनि डेटा:",
-    "voiceDataBeforeFirstNot": "आपके ध्वनि डेटा का उपयोग विशेष रूप से वास्तविक समय में बोलने पर प्रतिक्रिया प्रदान करने के लिए किया जाता है। क र ते हैं।",
-    "voiceDataAfterFirstNot": "अपना वॉयस डेटा बेचें। क र ते हैं।",
-    "voiceDataAfterSecondNot": "सार्वजनिक एआई मॉडल को प्रशिक्षित करने के लिए अपनी वॉयस रिकॉर्डिंग का उपयोग करें। एआई प्रतिक्रियाएं उत्पन्न करने के लिए बातचीत और इनपुट को संसाधित किया जाता है और भाषा सीखने के अनुभव को बेहतर बनाने के लिए अज्ञात रूप में इसका उपयोग किया जा सकता है।",
+    "voiceDataNotWord": "नहीं",
+    "voiceDataBeforeFirstNot": "आपके वॉइस डेटा का उपयोग केवल रियल-टाइम बोलने पर फीडबैक देने के लिए किया जाता है। हम",
+    "voiceDataAfterFirstNot": "आपका वॉइस डेटा बेचते हैं। हम",
+    "voiceDataAfterSecondNot": "आपकी वॉइस रिकॉर्डिंग का उपयोग सार्वजनिक AI मॉडलों को प्रशिक्षित करने के लिए करते हैं। बातचीत और इनपुट को AI प्रतिक्रियाएँ बनाने के लिए प्रोसेस किया जाता है, और भाषा सीखने के अनुभव को बेहतर बनाने के लिए इन्हें अनाम रूप में उपयोग किया जा सकता है।",
     "dataSecurityTitle": "3. डेटा सुरक्षा",
     "dataSecurityBody": "हम आपकी जानकारी को अनधिकृत पहुंच, परिवर्तन, प्रकटीकरण या विनाश से बचाने के लिए उद्योग-मानक सुरक्षा उपाय लागू करते हैं। पारगमन में सभी डेटा को टीएलएस के माध्यम से एन्क्रिप्ट किया गया है, और बाकी डेटा को एईएस-256 का उपयोग करके एन्क्रिप्ट किया गया है। आपकी बातचीत की प्रतिलेख अलग-अलग कंटेनरों में संग्रहीत हैं और केवल आपके द्वारा ही पहुंच योग्य हैं।",
     "rightsTitle": "4. आपके अधिकार",
@@ -2554,9 +2558,10 @@ const es: Messages = {
     "useDataTitle": "2. Cómo usamos tus datos",
     "useDataIntro": "Sus datos se utilizan para personalizar su experiencia de aprendizaje, realizar un seguimiento de su progreso y mejorar la precisión de nuestra IA. No vendemos sus datos personales a terceros.",
     "voiceDataLabel": "Datos de voz:",
-    "voiceDataBeforeFirstNot": "Sus datos de voz se utilizan exclusivamente para proporcionar comentarios de voz en tiempo real. nosotros hacemos",
-    "voiceDataAfterFirstNot": "vende tus datos de voz. nosotros hacemos",
-    "voiceDataAfterSecondNot": "Utilice sus grabaciones de voz para entrenar modelos públicos de IA. Las conversaciones y las entradas se procesan para generar respuestas de IA y pueden usarse de forma anónima para mejorar la experiencia de aprendizaje de idiomas.",
+    "voiceDataNotWord": "no",
+    "voiceDataBeforeFirstNot": "Tus datos de voz se usan exclusivamente para darte retroalimentación de habla en tiempo real. ",
+    "voiceDataAfterFirstNot": "vendemos tus datos de voz. ",
+    "voiceDataAfterSecondNot": "usamos tus grabaciones de voz para entrenar modelos públicos de IA. Las conversaciones y entradas se procesan para generar respuestas de IA y pueden usarse de forma anónima para mejorar la experiencia de aprendizaje de idiomas.",
     "dataSecurityTitle": "3. Seguridad de los datos",
     "dataSecurityBody": "Implementamos medidas de seguridad estándar de la industria para proteger su información contra acceso no autorizado, alteración, divulgación o destrucción. Todos los datos en tránsito se cifran mediante TLS y los datos en reposo se cifran mediante AES-256. Las transcripciones de sus conversaciones se almacenan en contenedores aislados y solo usted puede acceder a ellas.",
     "rightsTitle": "4. Tus derechos",
@@ -3162,7 +3167,7 @@ const ar: Messages = {
       },
       {
         "q": "كيف يمكنني حذف حسابي؟",
-        "a": "You can request account deletion by emailing support@speakwithsophie.ai. All your data will be permanently removed within 30 days."
+        "a": "يمكنك طلب حذف الحساب عبر مراسلتنا على support@speakwithsophie.ai. سيتم حذف جميع بياناتك نهائيًا خلال 30 يومًا."
       },
       {
         "q": "هل يمكنني استخدام صوفي دون اتصال بالإنترنت؟",
@@ -3204,9 +3209,10 @@ const ar: Messages = {
     "useDataTitle": "2. كيف نستخدم بياناتك",
     "useDataIntro": "يتم استخدام بياناتك لتخصيص تجربة التعلم الخاصة بك، وتتبع التقدم المحرز الخاص بك، وتحسين دقة الذكاء الاصطناعي لدينا. نحن لا نبيع بياناتك الشخصية لأطراف ثالثة.",
     "voiceDataLabel": "البيانات الصوتية:",
-    "voiceDataBeforeFirstNot": "يتم استخدام بياناتك الصوتية حصريًا لتقديم تعليقات التحدث في الوقت الفعلي. نحن نفعل",
-    "voiceDataAfterFirstNot": "بيع البيانات الصوتية الخاصة بك. نحن نفعل",
-    "voiceDataAfterSecondNot": "استخدم تسجيلاتك الصوتية لتدريب نماذج الذكاء الاصطناعي العامة. تتم معالجة المحادثات والمدخلات لإنشاء استجابات الذكاء الاصطناعي ويمكن استخدامها في نموذج مجهول لتحسين تجربة تعلم اللغة.",
+    "voiceDataNotWord": "لا",
+    "voiceDataBeforeFirstNot": "تُستخدم بياناتك الصوتية حصريًا لتقديم ملاحظات فورية على التحدث. نحن",
+    "voiceDataAfterFirstNot": "نبيع بياناتك الصوتية. نحن",
+    "voiceDataAfterSecondNot": "نستخدم تسجيلاتك الصوتية لتدريب نماذج ذكاء اصطناعي عامة. تُعالَج المحادثات والمدخلات لتوليد استجابات الذكاء الاصطناعي، وقد تُستخدم بشكل مجهول لتحسين تجربة تعلم اللغة.",
     "dataSecurityTitle": "3. أمن البيانات",
     "dataSecurityBody": "نحن ننفذ إجراءات أمنية متوافقة مع معايير الصناعة لحماية معلوماتك من الوصول غير المصرح به أو التغيير أو الكشف أو التدمير. يتم تشفير جميع البيانات أثناء النقل عبر TLS، ويتم تشفير البيانات غير النشطة باستخدام AES-256. يتم تخزين نصوص المحادثة الخاصة بك في حاويات معزولة ولا يمكن الوصول إليها إلا بواسطتك.",
     "rightsTitle": "4. حقوقك",

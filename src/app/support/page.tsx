@@ -1,15 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { BookOpen, Clock, Headphones, Mail, MessageCircle } from "lucide-react";
 import Navbar from "@/components/landing/shared/Navbar";
 import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import { getRequestMessages } from "@/lib/i18n/server";
 
-export const metadata = {
-  title: "Support | Speak With Sophie",
-  description:
-    "Get help with Speak With Sophie. Contact our support team, browse FAQs, and find resources to make the most of your language learning experience."
+export const generateMetadata = async (): Promise<Metadata> => {
+  const pageCopy = (await getRequestMessages()).supportPage;
+  return {
+    title: `${pageCopy.title} | Speak With Sophie`,
+    description: pageCopy.subtitle
+  };
 };
 
 export default async function SupportPage() {

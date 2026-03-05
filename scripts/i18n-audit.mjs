@@ -39,7 +39,7 @@ const allowSameValue = (value) => {
   if (/^(Sophie(\.ai)?|WhatsApp|AI|SBB|P1M|Sophie AI Inc\.|Alex Chen|Legal|M&G|SCF|Popular)$/.test(value)) return true;
   if (/^(Tengo vergüenza\.|El museo está cerrado ahora\.|sophie@example\.com|hello@example\.com)$/.test(value)) return true;
   if (/^\$?\d[\d$+%/ .:-]*$/.test(value)) return true;
-  if (/support@speakwithsophie\.ai/i.test(value)) return true;
+  if (/^support@speakwithsophie\.ai$/i.test(value)) return true;
   return false;
 };
 

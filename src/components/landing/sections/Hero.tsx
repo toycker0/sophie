@@ -208,7 +208,7 @@ const Hero = () => {
                           exit={{ opacity: 0, x: -20 }}
                           className="bg-gradient-to-br from-gray-100 to-gray-50 text-gray-700 px-6 py-4 rounded-3xl rounded-tr-sm text-base font-medium max-w-[85%] shadow-sm border border-gray-100"
                         >
-                          "{currentLanguage.chat_user}"
+                          {`"${currentLanguage.chat_user}"`}
                         </motion.div>
                       </AnimatePresence>
                     </div>

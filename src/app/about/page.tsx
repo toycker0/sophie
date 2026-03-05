@@ -6,19 +6,19 @@ import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import { getRequestMessages } from "@/lib/i18n/server";
 
-export const metadata: Metadata = {
-  title: "About | Sophie.ai - A Native Speaker in Your Pocket",
-  description:
-    "SpeakWithSophie.ai was born from one simple idea: real fluency comes from real conversation, not memorization. Meet the team behind Sophie.ai.",
-  openGraph: {
-    title: "About Sophie.ai",
-    description:
-      "The story behind the AI language coach that helps you speak boldly, speak often, and speak naturally.",
-    url: "https://sophie.ai/about",
-    siteName: "Sophie.ai",
-    locale: "en_US",
-    type: "website"
-  }
+export const generateMetadata = async (): Promise<Metadata> => {
+  const pageCopy = (await getRequestMessages()).aboutPage;
+  return {
+    title: `${pageCopy.titlePrefix} | Sophie.ai`,
+    description: pageCopy.subtitle,
+    openGraph: {
+      title: `${pageCopy.titlePrefix} Sophie.ai`,
+      description: pageCopy.subtitle,
+      url: "https://sophie.ai/about",
+      siteName: "Sophie.ai",
+      type: "website"
+    }
+  };
 };
 
 export default async function AboutPage() {
