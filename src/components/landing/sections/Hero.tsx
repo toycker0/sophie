@@ -8,6 +8,7 @@ import VideoModal from "@/components/landing/modals/VideoModal";
 import { trackEvent } from "@/lib/analytics";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
 import InteractiveRainbowWave from "@/components/landing/shared/InteractiveRainbowWave";
+import Logo from "@/components/landing/shared/Logo";
 import { useDemo } from "@/context/DemoContext";
 import { RainbowBorder } from "@/components/ui/RainbowBorder";
 import { RainbowGradient } from "@/components/ui/RainbowGradient";
@@ -177,17 +178,8 @@ const Hero = () => {
                   <div className="flex items-center justify-between border-b border-gray-200/50 pb-6">
                     <div className="flex items-center gap-4">
                       {/* Avatar */}
-                      <div className="relative w-12 h-12">
-                        <div
-                          style={{
-                            background: `linear-gradient(to right, ${currentLanguage.from}, ${currentLanguage.via}, ${currentLanguage.to})`,
-                          }}
-                          className="w-full h-full rounded-full p-[2px]"
-                        >
-                          <div className="w-full h-full bg-white rounded-full flex items-center justify-center text-lg font-black text-gray-900">
-                            S
-                          </div>
-                        </div>
+                      <div className="relative">
+                        <Logo withLink={false} showText={false} markSize={48} />
                         <div className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full z-10"></div>
                       </div>
                       <div>

@@ -14,7 +14,7 @@ const DemoContext = createContext<DemoContextType | undefined>(undefined);
 
 export const DemoProvider = ({ children }: { children: ReactNode }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     if (isPaused) return;
@@ -30,7 +30,7 @@ export const DemoProvider = ({ children }: { children: ReactNode }) => {
     const index = demoLanguages.findIndex((lang) => lang.id === id);
     if (index >= 0) {
       setCurrentIndex(index);
-      setIsPaused(true);
+      setIsPaused(false);
     }
   };
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -22,13 +22,22 @@ const headerLanguageOptions = [
 const Navbar = () => {
   const whatsappUrl = "https://wa.me/971505814567";
   const { currentLanguage, setLanguageById } = useDemo();
+  const initialHeaderLanguageId = useMemo(() => {
+    const hasCurrentLanguage = headerLanguageOptions.some(
+      (item) => item.id === currentLanguage.id
+    );
+    return hasCurrentLanguage ? currentLanguage.id : "en";
+  }, [currentLanguage.id]);
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedHeaderLanguageId, setSelectedHeaderLanguageId] =
+    useState(initialHeaderLanguageId);
 
   const handleLanguageChange = (value: string) => {
     const option = headerLanguageOptions.find((item) => item.id === value);
     if (!option) return;
+    setSelectedHeaderLanguageId(option.id);
     setLanguageById(option.id);
   };
 
@@ -56,16 +65,18 @@ const Navbar = () => {
     >
       <div
         className={cn(
-          "w-[95%] max-w-7xl flex items-center justify-between transition-all duration-300 rounded-full px-4 mx-auto",
+          "w-[95%] max-w-7xl flex items-center justify-between gap-3 transition-all duration-300 rounded-full px-4 mx-auto",
           isScrolled
             ? "bg-white/80 backdrop-blur-2xl border border-white/40 shadow-sm py-3 ring-1 ring-black/5"
             : "bg-transparent py-4 border border-transparent"
         )}
       >
-        <Logo />
+        <div className="shrink-0">
+          <Logo />
+        </div>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1 bg-white/50 p-1.5 rounded-full border border-white/20 backdrop-blur-sm">
+        <div className="hidden xl:flex items-center gap-1 bg-white/50 p-1.5 rounded-full border border-white/20 backdrop-blur-sm">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -76,10 +87,21 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+        <div className="hidden lg:flex xl:hidden items-center gap-0.5 bg-white/50 p-1 rounded-full border border-white/20 backdrop-blur-sm">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-black hover:bg-white/80 rounded-full transition-all duration-200 whitespace-nowrap"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <Select
-            value={currentLanguage.id}
+            value={selectedHeaderLanguageId}
             onValueChange={handleLanguageChange}
           >
             <SelectTrigger
@@ -105,9 +127,41 @@ const Navbar = () => {
             </Button>
           </a>
         </div>
+        <div className="hidden lg:flex xl:hidden items-center gap-2">
+          <Select
+            value={selectedHeaderLanguageId}
+            onValueChange={handleLanguageChange}
+          >
+            <SelectTrigger
+              aria-label="Select language"
+              className="h-9 w-[170px] rounded-full border-gray-200 bg-white/80 text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm text-sm"
+            >
+              <SelectValue placeholder="Language" />
+            </SelectTrigger>
+            <SelectContent>
+              {headerLanguageOptions.map((option) => (
+                <SelectItem key={option.id} value={option.id}>
+                  {option.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <Link href="/login" className="text-sm font-semibold text-black transition-colors whitespace-nowrap">
+            Log in
+          </Link>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+            <Button
+              size="icon"
+              aria-label="WhatsApp"
+              className="h-9 w-9 rounded-full bg-black hover:bg-gray-900 text-white border border-transparent"
+            >
+              <MessageCircle className="w-4 h-4" />
+            </Button>
+          </a>
+        </div>
 
         {/* Mobile Nav Toggle */}
-        <div className="lg:hidden">
+        <div className="lg:hidden shrink-0">
           <Sheet open={isOpen} onOpenChange={setIsOpen} >
             <SheetTrigger asChild>
               <Button
@@ -149,14 +203,24 @@ const Navbar = () => {
               <div className="flex-1 min-h-0 px-6 py-6">
                 <div className="h-full overflow-y-auto custom-scrollbar">
                   <div className="flex min-h-full flex-col justify-start gap-3">
-                    <div className="mb-2">
+                    {navLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className="w-full text-lg font-semibold text-gray-600 hover:text-black hover:bg-gray-50 px-4 py-3 rounded-xl transition-all"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                    <div>
                       <Select
-                        value={currentLanguage.id}
+                        value={selectedHeaderLanguageId}
                         onValueChange={handleLanguageChange}
                       >
                         <SelectTrigger
                           aria-label="Select language"
-                          className="h-12 w-full rounded-xl border-gray-200 bg-white text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm"
+                          className="h-12 w-full rounded-full border-gray-200 bg-white text-gray-700 focus:ring-0 focus:ring-offset-0 shadow-sm"
                         >
                           <SelectValue placeholder="Language" />
                         </SelectTrigger>
@@ -169,16 +233,6 @@ const Navbar = () => {
                         </SelectContent>
                       </Select>
                     </div>
-                    {navLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setIsOpen(false)}
-                        className="w-full text-lg font-semibold text-gray-600 hover:text-black hover:bg-gray-50 px-4 py-3 rounded-xl transition-all"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
                   </div>
                 </div>
               </div>
