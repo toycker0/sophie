@@ -92,7 +92,7 @@ const EraSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              href="https://https://www.speakwithsophie.ai//demo"
+              href="https://www.speakwithsophie.ai/demo"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-block transition-transform active:scale-95"
