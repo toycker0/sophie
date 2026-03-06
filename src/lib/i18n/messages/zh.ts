@@ -32,7 +32,7 @@ export const zh: Messages = {
     "line2": "和 Sophie 对话，更快更高效地获得流利表达",
     "meetButton": "认识 Sophie",
     "languageTitle": "Sophie 可协助你学习 50+ 种语言",
-    "learnAnyLanguage": "学习任意语言",
+    "learnAnyLanguage": "用任何语言学习任何语言，无需英语！",
     "seeMore": "查看更多",
     "seeLess": "收起"
   },
@@ -148,11 +148,11 @@ export const zh: Messages = {
     "sectionApproach": "我们的方法",
     "sectionFounders": "创始人",
     "sectionForYou": "为你而生",
-    "beginningP1": "SpeakWithSophie.ai 来自一个简单理念：真正的流利来自真实对话，而不是死记硬背。",
-    "beginningP2": "在 Sophie.ai，我们相信最快速建立信心的方式，是每天进行有智能反馈的口语练习。",
-    "approachP1": "我们的方法以沉浸式对话、即时纠正和个性化学习路径为核心。",
+    "beginningP1": "SpeakWithSophie.ai 诞生于一个简单理念：真正的流利来自真实对话，而不是死记硬背。传统语言学习工具常把学习者困在词汇清单和孤立语法练习中，但我们知道一定有更好的方法。",
+    "beginningP2": "在 Sophie.ai，我们相信在另一门语言中建立自信的最快方式，是每天进行带有智能反馈、且自然如真人交流的口语练习。Sophie 不只是 AI，她是会倾听、会适应、并从第一天起帮你练习真实场景对话的口语伙伴。",
+    "approachP1": "我们的方法围绕沉浸式对话、即时纠正和个性化学习路径展开。你不再只是重复词汇清单，而是在有意义的互动中开口、回应并持续提升。",
     "approachP2": "随着时间推移，Sophie.ai 会记住你的进度，帮你更快提升。",
-    "foundersP1": "我们坚信：任何人都应该能够自信地说新语言，无需害怕，无需被评判。",
+    "foundersP1": "我们，Luis Alberto Olguin Reyes 和 Ernesto Olguin Roman，基于一个信念打造了这个平台：任何人都应当能自信地说一门新语言，不必害怕、不被评判，也不必做枯燥练习。我们创建 Sophie.ai，是为了帮助世界各地的学习者大胆、频繁且自然地开口。",
     "forYouP1": "无论你是为旅行、工作或留学做准备，Sophie.ai 都能随时陪你练习。",
     "closingBanner": "欢迎来到 Sophie.ai — 你口袋里的母语者。"
   },
@@ -166,19 +166,19 @@ export const zh: Messages = {
     "principles": [
       {
         "title": "主动输出 (i+1)",
-        "description": "被动听力不会带来流利，我们鼓励你输出略高于当前水平的句子。"
+        "description": "被动听并不能建立流利度。我们的引擎会推动你构建略高于当前水平的句子，触发大脑语言中枢的快速适应。"
       },
       {
         "title": "语境化间隔重复",
-        "description": "我们重复的不只是单词，而是不同场景下的语言模式。"
+        "description": "我们不只是重复单词，而是在新语境中重复语言模式。如果你卡在西班牙语虚拟式，Sophie 会把它编入一场政治辩论，再放进约会场景。"
       },
       {
         "title": "情感过滤器",
-        "description": "恐惧会阻碍学习，AI 的安全环境能降低压力。"
+        "description": "恐惧会阻碍学习。通过 AI 模拟安全、无评判的环境，我们会降低你的皮质醇水平，让大脑敢于冒险，并以 3 倍速度保留信息。"
       },
       {
         "title": "即时反馈闭环",
-        "description": "错误需要立即纠正，才能避免错误固化。"
+        "description": "神经可塑性需要即时纠错。错误一出现，Sophie 就会介入，在坏习惯（错误固化）形成前重写神经通路。"
       }
     ]
   },
@@ -188,15 +188,15 @@ export const zh: Messages = {
     "subtitle": "我们将帮你最大化 Sophie 语言学习体验。",
     "contactUs": "联系我们",
     "emailSupport": "邮件支持",
-    "emailSupportDesc": "通用咨询、Bug 反馈与功能建议。",
+    "emailSupportDesc": "通用咨询、错误反馈与功能建议。",
     "accountHelp": "账户帮助",
     "accountHelpDesc": "登录、订阅或账户设置问题。",
-    "responseTime": "通常 24 小时内回复。紧急问题请在邮件标题注明 \"URGENT\"。",
+    "responseTime": "通常 24 小时内回复。紧急问题请在邮件标题注明“紧急”。",
     "faqTitle": "常见问题",
     "faqs": [
       {
         "q": "如何与 Sophie 开始对话？",
-        "a": "打开 App，进入 Talk 标签，选择语言后按住麦克风开口。"
+        "a": "打开应用，进入“对话”标签，选择你想学习的语言，然后按住麦克风按钮开始说话。Sophie 会实时回应你。"
       },
       {
         "q": "Sophie 支持哪些语言？",
@@ -204,7 +204,7 @@ export const zh: Messages = {
       },
       {
         "q": "我的语音数据会被存储吗？",
-        "a": "语音仅用于实时反馈处理，不会永久保存。"
+        "a": "你的语音会被实时处理以提供反馈，不会被永久存储。完整细节请查看我们的隐私政策。"
       },
       {
         "q": "如何删除账号？",
@@ -294,7 +294,7 @@ export const zh: Messages = {
   "hero": {
     "newDialectsAdded": "新增：{language} 方言",
     "dontJust": "别只是",
-    "intro": "别再在脑中翻译，直接问 Sophie。像母语者一样开口。",
+    "intro": "别再在脑中翻译，直接问 Sophie。她会帮你攻克真实对话，让你像母语者一样说话，而不是像课本里的学生。",
     "hearSophie": "听 Sophie",
     "conversation": "对话",
     "naturalCorrection": "自然纠错",

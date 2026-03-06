@@ -29,16 +29,16 @@ export const hi: Messages = {
   "era": {
     "subtitle": "आपका व्यक्तिगत भाषा सहायक।",
     "line1": "कोई भी भाषा। कभी भी। कहीं भी",
-    "line2": "Sophie से बात करें और तेज़, प्रभावी fluency पाएं",
+    "line2": "Sophie से बात करें और तेज़, प्रभावी प्रवाह हासिल करें",
     "meetButton": "Sophie से मिलें",
     "languageTitle": "Sophie 50+ भाषाओं में आपकी मदद कर सकती है",
-    "learnAnyLanguage": "कोई भी भाषा सीखें",
+    "learnAnyLanguage": "किसी भी भाषा को किसी भी भाषा में सीखें, अंग्रेज़ी की ज़रूरत नहीं!",
     "seeMore": "और देखें",
     "seeLess": "कम देखें"
   },
   "howItWorks": {
-    "title": "Fluency चक्र",
-    "subtitle": "तीन संज्ञानात्मक चरणों में झिझक से fluency तक।",
+    "title": "प्रवाह चक्र",
+    "subtitle": "तीन संज्ञानात्मक चरणों में झिझक से प्रवाह तक।",
     "startTalking": "बोलना शुरू करें",
     "steps": [
       {
@@ -89,7 +89,7 @@ export const hi: Messages = {
     "title": "अक्सर पूछे जाने वाले सवाल",
     "subtitle": "अपने एआई ट्यूटर के साथ {language} में महारत हासिल करने के बारे में आपको जो कुछ जानने की जरूरत है।",
     "stillHaveQuestions": "अभी भी सवाल हैं?",
-    "stillHaveQuestionsBody": "हमारी टीम आपकी learning journey में पूरी मदद करेगी।",
+    "stillHaveQuestionsBody": "हमारी टीम आपकी सीखने की यात्रा में पूरी मदद करेगी।",
     "getInTouch": "संपर्क करें",
     "items": [
       {
@@ -157,7 +157,7 @@ export const hi: Messages = {
     "closingBanner": "Sophie.ai में आपका स्वागत है।"
   },
   "methodologyPage": {
-    "badge": "Sophie Method",
+    "badge": "Sophie पद्धति",
     "titlePrefix": "अधिगम का",
     "titleGradient": "विज्ञान",
     "subtitle": "हम गेमिफिकेशन हटाकर केवल असल भाषा अधिगम पर ध्यान देते हैं।",
@@ -294,7 +294,7 @@ export const hi: Messages = {
   "hero": {
     "newDialectsAdded": "नया: {language} की बोलियाँ जुड़ीं",
     "dontJust": "सिर्फ़",
-    "intro": "दिमाग में अनुवाद न करें, सीधा Sophie से बात करें।",
+    "intro": "दिमाग में अनुवाद करना छोड़िए, सीधे Sophie से पूछिए। वह आपको असली बातचीत में निपुण बनने में मदद करेगी, ताकि आप किताबी छात्र की तरह नहीं बल्कि एक मूल वक्ता की तरह बोलें।",
     "hearSophie": "Sophie को सुनें",
     "conversation": "बातचीत",
     "naturalCorrection": "प्राकृतिक सुधार",
@@ -312,7 +312,7 @@ export const hi: Messages = {
       "तुम सब कुछ भूल जाओ"
     ],
     "speakingWithSophie": "Sophie के साथ बोलना",
-    "immersionInstantCorrection": "Immersion और Instant Correction",
+    "immersionInstantCorrection": "डूबकर सीखना और तुरंत सुधार",
     "solutionBullets": [
       "तुरंत प्रतिक्रिया प्राप्त करें",
       "बोलने का कौशल तुरंत विकसित हो गया",
@@ -323,8 +323,8 @@ export const hi: Messages = {
   },
   "pricing": {
     "titlePrefix": "अपनी",
-    "titleSuffix": "fluency में निवेश करें।",
-    "cheaperThanTutor": "एक घंटे के private tutor से भी सस्ता।",
+    "titleSuffix": "प्रवाह में निवेश करें।",
+    "cheaperThanTutor": "एक घंटे के निजी शिक्षक से भी सस्ता।",
     "freeTierName": "एम एंड जी",
     "freeTierSubtitle": "सोफी से मिलें और नमस्कार करें",
     "freePriceSuffix": "7 दिन",
@@ -483,7 +483,7 @@ export const hi: Messages = {
     "fluencyMetrics": "प्रवाह मेट्रिक्स"
   },
   "personalizationEngine": {
-    "title": "आपके व्यवहार पर बना premium learning engine।",
+    "title": "आपके व्यवहार पर बना उन्नत सीखने का इंजन।",
     "subtitle": "अधिकांश ऐप्स हर सत्र में रीसेट हो जाते हैं। सोफी आपके भाषा पैटर्न का एक सतत, विकसित मॉडल बनाती है।",
     "graphTitle": "लाइव लर्निंग ग्राफ़",
     "graphUpdated": "हर बातचीत के बाद अपडेट किया गया",
@@ -526,7 +526,7 @@ export const hi: Messages = {
     ]
   },
   "socialProof": {
-    "title": "अगली पीढ़ी के polyglots को शक्ति दे रहा है"
+    "title": "अगली पीढ़ी के बहुभाषियों को शक्ति दे रहा है"
   },
   "cookieBanner": {
     "title": "कुकीज़ और गोपनीयता",

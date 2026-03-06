@@ -32,7 +32,7 @@ export const es: Messages = {
     "line2": "Habla con Sophie para lograr fluidez rápida y efectiva",
     "meetButton": "Conoce a Sophie",
     "languageTitle": "Sophie puede ayudarte en más de 50 idiomas",
-    "learnAnyLanguage": "Aprende cualquier idioma",
+    "learnAnyLanguage": "¡Aprende cualquier idioma en cualquier idioma, sin necesidad de inglés!",
     "seeMore": "Ver más",
     "seeLess": "Ver menos"
   },
@@ -148,11 +148,11 @@ export const es: Messages = {
     "sectionApproach": "Nuestro enfoque",
     "sectionFounders": "Fundadores",
     "sectionForYou": "Para ti",
-    "beginningP1": "SpeakWithSophie.ai nació de una idea simple: la fluidez real viene de conversaciones reales, no de memorizar listas.",
-    "beginningP2": "En Sophie.ai creemos que la forma más rápida de ganar confianza es practicar hablando cada día con retroalimentación inteligente.",
+    "beginningP1": "SpeakWithSophie.ai nació de una idea simple: la fluidez real viene de conversaciones reales, no de memorizar listas. Las herramientas tradicionales de idiomas suelen encerrar a los estudiantes en listas de palabras y ejercicios gramaticales aislados, pero sabíamos que tenía que existir una forma mejor.",
+    "beginningP2": "En Sophie.ai creemos que la forma más rápida de ganar confianza en otro idioma es practicar a diario con retroalimentación inteligente, natural y humana. Sophie no es solo una IA: es una compañera de conversación que escucha, se adapta y te ayuda a practicar situaciones reales desde el primer día.",
     "approachP1": "Nuestro método se basa en diálogo inmersivo, corrección inmediata y rutas de aprendizaje personalizadas.",
     "approachP2": "Con el tiempo, Sophie.ai recuerda tu progreso y adapta la práctica para que mejores más rápido.",
-    "foundersP1": "Creamos esta plataforma con la convicción de que cualquiera puede hablar un nuevo idioma con confianza, sin miedo y sin juicios.",
+    "foundersP1": "Nosotros, Luis Alberto Olguin Reyes y Ernesto Olguin Roman, construimos esta plataforma con una convicción: cualquiera debería poder hablar un idioma nuevo con confianza, sin miedo, sin juicios y sin ejercicios aburridos. Creamos Sophie.ai para que estudiantes de todo el mundo hablen con valentía, frecuencia y naturalidad.",
     "forYouP1": "Ya sea para viajar, trabajar, estudiar o simplemente conversar con fluidez real, Sophie.ai está contigo en cualquier momento.",
     "closingBanner": "Bienvenido a Sophie.ai: un hablante nativo en tu bolsillo."
   },
@@ -196,7 +196,7 @@ export const es: Messages = {
     "faqs": [
       {
         "q": "¿Cómo inicio una conversación con Sophie?",
-        "a": "Abre la app, ve a la pestaña Talk, elige el idioma y mantén presionado el micrófono para hablar."
+        "a": "Abre la app, ve a la pestaña Hablar, elige el idioma y mantén presionado el micrófono para hablar."
       },
       {
         "q": "¿Qué idiomas admite Sophie?",
@@ -212,7 +212,7 @@ export const es: Messages = {
       },
       {
         "q": "¿Puedo usar Sophie sin conexión?",
-        "a": "No. Sophie requiere internet para procesar conversaciones con IA y feedback en tiempo real."
+        "a": "No. Sophie requiere internet para procesar conversaciones con IA y retroalimentación en tiempo real."
       }
     ],
     "privacyPolicy": "Política de privacidad",
@@ -294,7 +294,7 @@ export const es: Messages = {
   "hero": {
     "newDialectsAdded": "Nuevo: dialectos de {language} agregados",
     "dontJust": "No solo",
-    "intro": "Deja de traducir en tu cabeza y solo pregúntale a Sophie. Ella te ayuda a dominar conversaciones reales como nativo.",
+    "intro": "Deja de traducir en tu cabeza y solo pregúntale a Sophie. Te ayudará a dominar conversaciones reales para hablar como nativo, no como un estudiante de libro de texto.",
     "hearSophie": "Escuchar a Sophie",
     "conversation": "Conversación",
     "naturalCorrection": "Corrección natural",
@@ -361,7 +361,7 @@ export const es: Messages = {
     "proTab24": "24 meses",
     "saveVsMonthly": "Ahorra {percent}% vs mensual",
     "proFeatures": [
-      "Todo en Sophie Close Friend",
+      "Todo en Sophie Amiga Cercana",
       "Soporte prioritario 24 horas al día, 7 días a la semana",
       "Contenido exclusivo y acceso anticipado",
       "Ruta de aprendizaje personalizada",
@@ -450,7 +450,7 @@ export const es: Messages = {
       },
       {
         "id": "correct",
-        "label": "Feedback instantáneo",
+        "label": "Retroalimentación instantánea",
         "desc": "Correcciones que se quedan."
       },
       {
@@ -483,7 +483,7 @@ export const es: Messages = {
     "fluencyMetrics": "Métricas de fluidez"
   },
   "personalizationEngine": {
-    "title": "Un motor premium de aprendizaje construido alrededor de tu comportamiento.",
+    "title": "Un motor avanzado de aprendizaje construido alrededor de tu comportamiento.",
     "subtitle": "La mayoría de apps se reinician cada sesión. Sophie construye un modelo persistente de tus patrones.",
     "graphTitle": "Gráfico de aprendizaje en vivo",
     "graphUpdated": "Actualizado después de cada conversación.",

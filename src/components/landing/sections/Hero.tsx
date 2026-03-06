@@ -13,10 +13,12 @@ import { useDemo } from "@/context/DemoContext";
 import { RainbowBorder } from "@/components/ui/RainbowBorder";
 import { RainbowGradient } from "@/components/ui/RainbowGradient";
 import { useLanguage } from "@/context/LanguageContext";
+import { getBrandTerms } from "@/lib/i18n/brand";
 
 const Hero = () => {
   const { currentLanguage } = useDemo();
-  const { messages } = useLanguage();
+  const { messages, locale } = useLanguage();
+  const brand = getBrandTerms(locale);
 
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden pb-24">
@@ -184,7 +186,7 @@ const Hero = () => {
                       </div>
                       <div>
                         <div className="text-base font-bold text-gray-900">
-                          Sophie
+                          {brand.name}
                         </div>
                         <div className="text-xs text-gray-500 font-medium tracking-wide">
                           {currentLanguage.name}
