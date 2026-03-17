@@ -80,7 +80,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       apple: "/favicon-preview/wave-favicon-preview-512.png"
     },
     verification: {
-      google: "TQWlmFlTU8Ej6OGIkfJxKT2Y0bec--QB5sGitZMXna40"
+      google: "TQWlmFlTU8Ej6OGIkfJxKT2Y0bec--QB5sGitZMXna4"
     }
   };
 };
