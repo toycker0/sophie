@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/landing/shared/Navbar";
 import EraSection from "@/components/landing/sections/EraSection";
 import Hero from "@/components/landing/sections/Hero";
-import SocialProof from "@/components/landing/sections/SocialProof";
+// import SocialProof from "@/components/landing/sections/SocialProof";
 import ProblemSolution from "@/components/landing/sections/ProblemSolution";
 import HowItWorks from "@/components/landing/sections/HowItWorks";
 import Features from "@/components/landing/sections/Features";
@@ -10,7 +10,7 @@ import PersonalizationEngine from "@/components/landing/sections/Personalization
 import ProductTour from "@/components/landing/sections/ProductTour";
 import ComparisonTable from "@/components/landing/sections/ComparisonTable";
 import Testimonials from "@/components/landing/sections/Testimonials";
-import Pricing from "@/components/landing/sections/Pricing";
+// import Pricing from "@/components/landing/sections/Pricing";
 import FAQ from "@/components/landing/sections/FAQ";
 import Footer from "@/components/landing/shared/Footer";
 import { getBrandTerms } from "@/lib/i18n/brand";
@@ -56,7 +56,7 @@ export default function Home() {
       <ProductTour />
       <Testimonials />
       <ComparisonTable />
-      <Pricing />
+      {/* <Pricing /> */}
       <FAQ />
       <Footer />
     </main>
