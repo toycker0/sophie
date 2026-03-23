@@ -70,6 +70,7 @@ const Footer = () => {
                     <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
+                {/* TODO: uncomment when Pricing section is re-enabled
                 <li>
                   <Link
                     href="#pricing"
@@ -79,6 +80,7 @@ const Footer = () => {
                     <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
+                */}
                 <li>
                   <Link
                     href="#methodology"

@@ -107,7 +107,7 @@ const Navbar = () => {
     { href: "/methodology", label: messages.navbar.science },
     { href: "/#how-it-works", label: messages.navbar.howItWorks },
     { href: "/#features", label: messages.navbar.features },
-    { href: "/#pricing", label: messages.navbar.pricing },
+    // { href: "/#pricing", label: messages.navbar.pricing }, // TODO: uncomment when Pricing section is re-enabled
     { href: "/#faq", label: messages.navbar.faq }
   ];
   const selectedLanguageOption = headerLanguageOptions.find((option) => option.id === locale);
