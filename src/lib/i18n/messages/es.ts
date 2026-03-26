@@ -407,12 +407,12 @@ export const es: Messages = {
         "apps": "0 minutos (tocando)",
         "tutor": "45 minutos/sesión"
       },
-      {
-        "name": "Costo por mes",
-        "sophie": "$12",
-        "apps": "$0 - $15",
-        "tutor": "$200+"
-      },
+      // {
+      //   "name": "Costo por mes",
+      //   "sophie": "$12",
+      //   "apps": "$0 - $15",
+      //   "tutor": "$200+"
+      // },
       {
         "name": "Velocidad de retroalimentación",
         "sophie": "Instantáneo (<1s)",
