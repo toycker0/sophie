@@ -17,7 +17,7 @@ const ComparisonTable = () => {
   const { messages } = useLanguage();
   const features = messages.comparisonTable.rows;
 
-  const featureIcons = [Tag, CalendarDays, Zap, MessageCircleMore, Gauge, Check];
+  const featureIcons = [Tag, /* CalendarDays, */ Zap, MessageCircleMore, Gauge, Check];
   const rainbowBorder = `linear-gradient(180deg, ${Colors.rainbow.join(", ")})`;
 
   return (
