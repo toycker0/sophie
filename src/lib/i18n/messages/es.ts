@@ -287,9 +287,9 @@ export const es: Messages = {
     "subscriptionsBody": "Sophie.ai ofrece niveles gratuitos y de pago. Las suscripciones pagas se facturan mensual, trimestral, semestral o anualmente. Puede cancelar en cualquier momento y el acceso continuará hasta el final de su período de facturación.",
     "refundLabel": "Política de reembolso:",
     "refundBody": "Ofrecemos una garantía de devolución de dinero de 14 días para suscriptores nuevos que no estén satisfechos con el servicio.",
-    "ipTitle": "4. Propiedad intelectual",
+    "ipTitle": "3. Propiedad intelectual",
     "ipBody": "El Servicio y su contenido original (excluidos los datos de voz generados por el usuario), sus características y funcionalidades son propiedad exclusiva de Sophie.ai.",
-    "terminationTitle": "5. Terminación",
+    "terminationTitle": "4. Terminación",
     "terminationBody": "Nos reservamos el derecho de cancelar o suspender el acceso a nuestro Servicio inmediatamente, sin previo aviso, por conducta que creemos que viola estos Términos o es perjudicial para otros usuarios del Servicio."
   },
   "hero": {
