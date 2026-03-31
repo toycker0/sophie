@@ -287,9 +287,9 @@ export const en: Messages = {
     "subscriptionsBody": "Sophie.ai offers Free and Paid tiers. Paid subscriptions are billed monthly, quarterly, semi-annually, or annually. You may cancel at any time, and access will continue until the end of your billing period.",
     "refundLabel": "Refund Policy:",
     "refundBody": "We offer a 14-day money-back guarantee for first-time subscribers who are unsatisfied with the service.",
-    "ipTitle": "4. Intellectual Property",
+    "ipTitle": "3. Intellectual Property",
     "ipBody": "The Service and its original content (excluding user-generated voice data), features, and functionality are the exclusive property of Sophie.ai.",
-    "terminationTitle": "5. Termination",
+    "terminationTitle": "4. Termination",
     "terminationBody": "We reserve the right to terminate or suspend access to our Service immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users of the Service."
   },
   "hero": {
