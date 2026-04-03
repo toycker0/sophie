@@ -287,9 +287,9 @@ export const en: Messages = {
     "subscriptionsBody": "Sophie.ai offers Free and Paid tiers. Paid subscriptions are billed monthly, quarterly, semi-annually, or annually. You may cancel at any time, and access will continue until the end of your billing period.",
     "refundLabel": "Refund Policy:",
     "refundBody": "We offer a 14-day money-back guarantee for first-time subscribers who are unsatisfied with the service.",
-    "ipTitle": "3. Intellectual Property",
+    "ipTitle": "4. Intellectual Property",
     "ipBody": "The Service and its original content (excluding user-generated voice data), features, and functionality are the exclusive property of Sophie.ai.",
-    "terminationTitle": "4. Termination",
+    "terminationTitle": "5. Termination",
     "terminationBody": "We reserve the right to terminate or suspend access to our Service immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users of the Service."
   },
   "hero": {
@@ -407,12 +407,12 @@ export const en: Messages = {
         "apps": "0 mins (Tapping)",
         "tutor": "45 mins / session"
       },
-      // {
-      //   "name": "Cost per Month",
-      //   "sophie": "$12",
-      //   "apps": "$0 - $15",
-      //   "tutor": "$200+"
-      // },
+      {
+        "name": "Cost per Month",
+        "sophie": "$12",
+        "apps": "$0 - $15",
+        "tutor": "$200+"
+      },
       {
         "name": "Feedback Speed",
         "sophie": "Instant (<1s)",
@@ -439,6 +439,12 @@ export const en: Messages = {
       }
     ],
     "footer": "Based on average market rates for professional language tutors in the US/EU."
+  },
+  "appDownload": {
+    "title": "Get the App",
+    "subtitle": "Download Sophie on your phone and start speaking today.",
+    "scanQrCode": "Scan to download",
+    "availableOn": "Available on iOS and Android"
   },
   "productTour": {
     "title": "Confidence Boost",
