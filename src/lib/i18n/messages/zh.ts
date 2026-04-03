@@ -287,9 +287,9 @@ export const zh: Messages = {
  "subscriptionsBody": "Sophie.ai 提供免费和付费级别。付费订阅按月、季、半年或年计费。您可以随时取消，并且访问将继续到您的计费周期结束。",
  "refundLabel": "退款政策：",
  "refundBody": "我们为对服务不满意的首次订阅者提供 14 天退款保证。",
- "ipTitle": "3. 知识产权",
+ "ipTitle": "4. 知识产权",
  "ipBody": "本服务及其原始内容（不包括用户生成的语音数据）、特性和功能是 Sophie.ai 的专有财产。",
- "terminationTitle": "4. 终止",
+ "terminationTitle": "5. 终止",
  "terminationBody": "对于我们认为违反这些条款或对服务的其他用户有害的行为，我们保留立即终止或暂停访问我们的服务的权利，恕不另行通知。"
  },
  "hero": {
@@ -407,12 +407,12 @@ export const zh: Messages = {
  "apps": "0 分钟（敲击）",
  "tutor": "45 分钟/节"
  },
- // {
- //  "name": "每月费用",
- //  "sophie": "12 美元",
- //  "apps": "$0 - $15",
- //  "tutor": "$200+"
- // },
+ {
+  "name": "每月费用",
+  "sophie": "12 美元",
+  "apps": "$0 - $15",
+  "tutor": "$200+"
+ },
  {
  "name": "反馈速度",
  "sophie": "即时（<1秒）",
@@ -439,6 +439,12 @@ export const zh: Messages = {
  }
  ],
  "footer": "基于美国/欧盟专业语言教师的市场均价。"
+ },
+ "appDownload": {
+   "title": "下载应用",
+   "subtitle": "在手机上下载Sophie，今天就开始说话。",
+   "scanQrCode": "扫码下载",
+   "availableOn": "支持 iOS 和 Android"
  },
  "productTour": {
  "title": "自信提升",

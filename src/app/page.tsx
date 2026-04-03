@@ -10,7 +10,8 @@ import PersonalizationEngine from "@/components/landing/sections/Personalization
 import ProductTour from "@/components/landing/sections/ProductTour";
 import ComparisonTable from "@/components/landing/sections/ComparisonTable";
 import Testimonials from "@/components/landing/sections/Testimonials";
-// import Pricing from "@/components/landing/sections/Pricing";
+import AppDownload from "@/components/landing/sections/AppDownload";
+import Pricing from "@/components/landing/sections/Pricing";
 import FAQ from "@/components/landing/sections/FAQ";
 import Footer from "@/components/landing/shared/Footer";
 import { getBrandTerms } from "@/lib/i18n/brand";
@@ -57,6 +58,7 @@ export default function Home() {
       <Testimonials />
       <ComparisonTable />
       {/* <Pricing /> */}
+      <AppDownload />
       <FAQ />
       <Footer />
     </main>

@@ -240,6 +240,12 @@ export interface Messages {
     rows: Array<{ name: string; sophie: string; apps: string; tutor: string }>;
     footer: string;
   };
+  appDownload: {
+    title: string;
+    subtitle: string;
+    scanQrCode: string;
+    availableOn: string;
+  };
   productTour: {
     title: string;
     subtitle: string;

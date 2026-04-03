@@ -287,9 +287,9 @@ export const es: Messages = {
     "subscriptionsBody": "Sophie.ai ofrece niveles gratuitos y de pago. Las suscripciones pagas se facturan mensual, trimestral, semestral o anualmente. Puede cancelar en cualquier momento y el acceso continuará hasta el final de su período de facturación.",
     "refundLabel": "Política de reembolso:",
     "refundBody": "Ofrecemos una garantía de devolución de dinero de 14 días para suscriptores nuevos que no estén satisfechos con el servicio.",
-    "ipTitle": "3. Propiedad intelectual",
+    "ipTitle": "4. Propiedad intelectual",
     "ipBody": "El Servicio y su contenido original (excluidos los datos de voz generados por el usuario), sus características y funcionalidades son propiedad exclusiva de Sophie.ai.",
-    "terminationTitle": "4. Terminación",
+    "terminationTitle": "5. Terminación",
     "terminationBody": "Nos reservamos el derecho de cancelar o suspender el acceso a nuestro Servicio inmediatamente, sin previo aviso, por conducta que creemos que viola estos Términos o es perjudicial para otros usuarios del Servicio."
   },
   "hero": {
@@ -407,12 +407,12 @@ export const es: Messages = {
         "apps": "0 minutos (tocando)",
         "tutor": "45 minutos/sesión"
       },
-      // {
-      //   "name": "Costo por mes",
-      //   "sophie": "$12",
-      //   "apps": "$0 - $15",
-      //   "tutor": "$200+"
-      // },
+      {
+        "name": "Costo por mes",
+        "sophie": "$12",
+        "apps": "$0 - $15",
+        "tutor": "$200+"
+      },
       {
         "name": "Velocidad de retroalimentación",
         "sophie": "Instantáneo (<1s)",
@@ -439,6 +439,12 @@ export const es: Messages = {
       }
     ],
     "footer": "Basado en tarifas promedio del mercado de tutores profesionales en EE.UU./UE."
+  },
+  "appDownload": {
+    "title": "Descarga la App",
+    "subtitle": "Descarga Sophie en tu teléfono y empieza a hablar hoy.",
+    "scanQrCode": "Escanea para descargar",
+    "availableOn": "Disponible en iOS y Android"
   },
   "productTour": {
     "title": "Impulso de confianza",
