@@ -62,13 +62,13 @@ export default async function TermsPage() {
             </div>
           </section>
 
-          {/* <section>
+          <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">{pageCopy.subscriptionsTitle}</h2>
             <p className="text-gray-600 leading-relaxed mb-4">{pageCopy.subscriptionsBody}</p>
             <div className="bg-gray-50 p-4 rounded-xl text-sm text-gray-500 border border-gray-100">
               <strong>{pageCopy.refundLabel}</strong> {pageCopy.refundBody}
             </div>
-          </section> */}
+          </section>
 
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">{pageCopy.ipTitle}</h2>

@@ -67,7 +67,7 @@ const FAQ = () => {
           <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">{withLanguage(messages.faq.subtitle)}</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq) => (
               <FAQCard key={faq.value} faq={faq} />
@@ -75,8 +75,8 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        <div className="max-w-3xl mx-auto mt-10">
-          <div className="text-center p-12 md:p-16 rounded-3xl bg-gray-50 border border-gray-100">
+        <div className="max-w-7xl mx-auto mt-10">
+          <div className="text-center p-14 md:p-20 rounded-3xl bg-gray-50 border border-gray-100">
             <h3 className="text-3xl font-bold mb-4 text-black">{messages.faq.stillHaveQuestions}</h3>
             <p className="text-xl text-gray-500 mb-10 max-w-lg mx-auto leading-relaxed">{messages.faq.stillHaveQuestionsBody}</p>
             <div className="inline-block group">
