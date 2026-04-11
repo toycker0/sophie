@@ -33,13 +33,13 @@ export const generateMetadata = async (): Promise<Metadata> => {
       description,
       siteName: brand.dotAi,
       type: "website",
-      url: "https://sophie.ai"
+      url: "https://sophie.ai",
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
-    }
+      description,
+    },
   };
 };
 
@@ -57,7 +57,7 @@ export default function Home() {
       <ProductTour />
       <Testimonials />
       <ComparisonTable />
-      {/* <Pricing /> */}
+      <Pricing />
       <AppDownload />
       <FAQ />
       <Footer />
