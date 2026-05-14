@@ -8,6 +8,7 @@ import { RainbowGradient } from "@/components/ui/RainbowGradient";
 import LanguagesMarqueeSection from "@/components/landing/sections/LanguagesMarqueeSection";
 import { useLanguage } from "@/context/LanguageContext";
 import { ERA_FIXED_TITLE } from "@/lib/i18n/brand";
+import Link from "next/link";
 
 const EraSection = () => {
   const { messages } = useLanguage();
@@ -91,10 +92,8 @@ const EraSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <a
-              href="https://www.speakwithsophie.ai/demo"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#sophie"
               className="group inline-block transition-transform active:scale-95"
             >
               <RainbowBorder
@@ -107,10 +106,9 @@ const EraSection = () => {
                   {messages.era.meetButton}
                 </span>
               </RainbowBorder>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );

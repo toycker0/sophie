@@ -6,7 +6,7 @@ export interface BrandTerms {
   dotAi: string;
 }
 
-export const ERA_FIXED_TITLE = "Sophia AI";
+export const ERA_FIXED_TITLE = "Sophie AI";
 
 // Product and brand names are intentionally fixed in English across all locales.
 export const BRAND_TERMS: BrandTerms = {
