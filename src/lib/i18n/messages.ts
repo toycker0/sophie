@@ -114,6 +114,14 @@ export interface Messages {
     accountHelp: string;
     accountHelpDesc: string;
     responseTime: string;
+    accountDeletion: {
+      title: string;
+      introBeforeEmail: string;
+      introAfterEmail: string;
+      subjectLine: string;
+      details: string;
+      warning: string;
+    };
     faqTitle: string;
     faqs: Array<{ q: string; a: string }>;
     privacyPolicy: string;

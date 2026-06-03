@@ -193,6 +193,14 @@ export const hi: Messages = {
     "accountHelp": "अकाउंट सहायता",
     "accountHelpDesc": "लॉगिन, सदस्यता, या खाता सेटिंग से संबंधित समस्याएं.",
     "responseTime": "हम आम तौर पर 24 घंटों के भीतर जवाब देते हैं। अत्यावश्यक मुद्दों के लिए, कृपया अपनी ईमेल विषय पंक्ति में \"तत्काल\" शामिल करें।",
+    "accountDeletion": {
+      "title": "Delete your account",
+      "introBeforeEmail": "To permanently delete your account and all associated data, email us at",
+      "introAfterEmail": "with the subject line",
+      "subjectLine": "Account Deletion Request",
+      "details": "Please include the email address linked to your account.",
+      "warning": "All your data will be permanently removed within 30 days. This action cannot be undone."
+    },
     "faqTitle": "अक्सर पूछे जाने वाले सवाल",
     "faqs": [
       {

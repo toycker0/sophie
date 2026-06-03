@@ -193,6 +193,14 @@ export const ar: Messages = {
     "accountHelp": "مساعدة الحساب",
     "accountHelpDesc": "مشكلات تتعلق بتسجيل الدخول أو الاشتراك أو إعدادات الحساب.",
     "responseTime": "نرد عادةً خلال 24 ساعة. بالنسبة للقضايا العاجلة، يرجى تضمين كلمة \"عاجل\" في سطر موضوع البريد الإلكتروني الخاص بك.",
+    "accountDeletion": {
+      "title": "Delete your account",
+      "introBeforeEmail": "To permanently delete your account and all associated data, email us at",
+      "introAfterEmail": "with the subject line",
+      "subjectLine": "Account Deletion Request",
+      "details": "Please include the email address linked to your account.",
+      "warning": "All your data will be permanently removed within 30 days. This action cannot be undone."
+    },
     "faqTitle": "الأسئلة الشائعة",
     "faqs": [
       {
