@@ -193,6 +193,14 @@ export const es: Messages = {
     "accountHelp": "Ayuda con la cuenta",
     "accountHelpDesc": "Problemas de inicio de sesión, suscripción o configuración de cuenta.",
     "responseTime": "Normalmente respondemos en 24 horas. Para casos urgentes, incluye \"URGENTE\" en el asunto.",
+    "accountDeletion": {
+      "title": "Delete your account",
+      "introBeforeEmail": "To permanently delete your account and all associated data, email us at",
+      "introAfterEmail": "with the subject line",
+      "subjectLine": "Account Deletion Request",
+      "details": "Please include the email address linked to your account.",
+      "warning": "All your data will be permanently removed within 30 days. This action cannot be undone."
+    },
     "faqTitle": "Preguntas frecuentes",
     "faqs": [
       {

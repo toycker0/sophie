@@ -193,6 +193,14 @@ export const en: Messages = {
     "accountHelp": "Account Help",
     "accountHelpDesc": "Issues with login, subscription, or account settings.",
     "responseTime": "We typically respond within 24 hours. For urgent issues, please include \"URGENT\" in your email subject line.",
+    "accountDeletion": {
+      "title": "Delete your account",
+      "introBeforeEmail": "To permanently delete your account and all associated data, email us at",
+      "introAfterEmail": "with the subject line",
+      "subjectLine": "Account Deletion Request",
+      "details": "Please include the email address linked to your account.",
+      "warning": "All your data will be permanently removed within 30 days. This action cannot be undone."
+    },
     "faqTitle": "Frequently Asked Questions",
     "faqs": [
       {
@@ -208,8 +216,8 @@ export const en: Messages = {
         "a": "Your voice is processed in real-time to provide feedback and is not permanently stored. See our Privacy Policy for full details."
       },
       {
-        "q": "How do I delete my account?",
-        "a": "You can request account deletion by emailing support@speakwithsophie.ai. All your data will be permanently removed within 30 days."
+        "q": "Delete your account",
+        "a": "To permanently delete your account and all associated data, email us at support@speakwithsophie.ai with the subject line \"Account Deletion Request\". Please include the email address linked to your account. All your data will be permanently removed within 30 days. This action cannot be undone."
       },
       {
         "q": "Can I use Sophie offline?",

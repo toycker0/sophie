@@ -212,6 +212,14 @@ export const zh: Messages = {
     accountHelp: "账户帮助",
     accountHelpDesc: "登录、订阅或账户设置问题。",
     responseTime: "通常 24 小时内回复。紧急问题请在邮件标题注明“紧急”。",
+    accountDeletion: {
+      title: "Delete your account",
+      introBeforeEmail: "To permanently delete your account and all associated data, email us at",
+      introAfterEmail: "with the subject line",
+      subjectLine: "Account Deletion Request",
+      details: "Please include the email address linked to your account.",
+      warning: "All your data will be permanently removed within 30 days. This action cannot be undone.",
+    },
     faqTitle: "常见问题",
     faqs: [
       {

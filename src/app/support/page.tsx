@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { BookOpen, Clock, Headphones, Mail, MessageCircle } from "lucide-react";
+import { BookOpen, Clock, Headphones, Mail, MessageCircle, Trash2 } from "lucide-react";
 import Navbar from "@/components/landing/shared/Navbar";
 import Footer from "@/components/landing/shared/Footer";
 import RainbowWaveBackground from "@/components/landing/shared/RainbowWaveBackground";
@@ -80,6 +80,34 @@ export default async function SupportPage() {
             <div className="flex items-center gap-3 mt-8 p-4 bg-gray-50 rounded-xl border border-gray-100">
               <Clock className="w-5 h-5 text-gray-400 shrink-0" />
               <p className="text-sm text-gray-500">{pageCopy.responseTime}</p>
+            </div>
+          </div>
+
+          <div className="bg-white/60 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-white/60 shadow-xl">
+            <h2 className="flex items-center gap-3 text-2xl font-bold mb-6 text-gray-900">
+              <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center">
+                <Trash2 className="w-5 h-5 text-red-600" />
+              </div>
+              {pageCopy.accountDeletion.title}
+            </h2>
+
+            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+              <p>
+                {pageCopy.accountDeletion.introBeforeEmail}{" "}
+                <a
+                  href="mailto:support@speakwithsophie.ai?subject=Account%20Deletion%20Request"
+                  className="font-bold text-black underline underline-offset-4 hover:text-gray-700 transition-colors"
+                >
+                  support@speakwithsophie.ai
+                </a>{" "}
+                {pageCopy.accountDeletion.introAfterEmail}{" "}
+                <span className="font-bold text-gray-900">
+                  &quot;{pageCopy.accountDeletion.subjectLine}&quot;
+                </span>
+                .
+              </p>
+              <p>{pageCopy.accountDeletion.details}</p>
+              <p className="font-semibold text-gray-900">{pageCopy.accountDeletion.warning}</p>
             </div>
           </div>
 
